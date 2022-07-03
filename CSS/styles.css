@@ -34,6 +34,19 @@ img {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*CONTAINER*/
 .container {
   width: 1200px;
@@ -55,7 +68,7 @@ img {
   margin: calc(-1 * var(--indent) / 2);
 }
 
-.card-set-item {
+.card-set__item {
   flex-basis: calc((100% - var(--indent) * var(--item)) / var(--item));
   margin: calc(var(--indent) / 2);
 }
@@ -250,28 +263,28 @@ header {
 }
 
 /*ОСОБЕННОСТИ index.html*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .qualities {
   padding-bottom: 47px;
 }
 
-.qualities-list {
+.qualities__list {
   --item: 4;
 }
 
-.qualities-title {
+.qualities__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.qualities__title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -284,7 +297,7 @@ header {
   color: var(--primary-text-color);
 }
 
-.qualities-text {
+.qualities__text {
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
@@ -292,28 +305,12 @@ header {
   color: var(--secondary-text-color);
 }
 
-.svg-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 30px;
-  height: 120px;
-
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
-
 /*ЧЕМ МЫ ЗАНИМАЕМСЯ index.html*/
 .work {
   padding-top: 47px;
 }
 
-.work-list {
-  --item: 3;
-}
-
-.work-title {
+.work__title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -326,13 +323,17 @@ header {
   color: var(--primary-text-color);
 }
 
+.work__list {
+  --item: 3;
+}
+
 /*ПЛАШКИ ЧЕМ МЫ ЗАНИМАЕМСЯ*/
 
-.work-tab {
+.work__wrapper {
   position: relative;
 }
 
-.work-top-text {
+.work__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -358,11 +359,7 @@ header {
   background-color: #f5f4fa;
 }
 
-.team-list {
-  --item: 4;
-}
-
-.team-title {
+.team__title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -375,6 +372,10 @@ header {
   color: var(--primary-text-color);
 }
 
+.team__list {
+  --item: 4;
+}
+
 .item-border {
   background-color: var(--accent-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -382,7 +383,7 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-wrapper {
+.team__wrapper {
   padding: 30px 0;
 }
 
