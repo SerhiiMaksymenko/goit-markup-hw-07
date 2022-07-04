@@ -26,14 +26,11 @@
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
-}
 
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--primary-background-color);
-}
-.nav-link.current {
-    color: var(--primary-background-color);
+    &:hover,
+    &:focus {
+            color: var(--primary-background-color);
+        }
 }
 
 .current::after {
@@ -49,4 +46,8 @@
     border-radius: 2px;
     background-color: var(--primary-background-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    .nav-link & {
+            color: var(--primary-background-color);
+        }
 }

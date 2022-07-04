@@ -22,21 +22,23 @@
 
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
+
+    .checkbox:focus+& {
+            border-color: var(--primary-background-color);
+        }
+    
+    .checkbox:checked+& {
+            background-color: var(--primary-background-color);
+            border: none;
+        }
 }
 
 .checked-icon {
     fill: transparent;
+    .checkbox:checked+.succses & {
+            fill: var(--accent-text-color);
+        }
 }
 
-.checkbox:focus+.succses span {
-    border-color: var(--primary-background-color);
-}
 
-.checkbox:checked+.succses span {
-    background-color: var(--primary-background-color);
-    border: none;
-}
 
-.checkbox:checked+.succses .checked-icon {
-    fill: var(--accent-text-color);
-}

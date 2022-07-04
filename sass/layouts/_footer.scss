@@ -48,14 +48,8 @@ address {
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-post:hover,
-.footer-post:focus {
-    color: var(--primary-background-color);
-}
-
-.footer-tel:hover,
-.footer-tel:focus {
-    color: var(--primary-background-color);
+    &:hover,
+    &:focus {
+        color: var(--primary-background-color);
+    }
 }

@@ -34,16 +34,10 @@ header {
     letter-spacing: 0.02em;
 
     color: var(--secondary-text-color);
-}
-
-.header-post:hover,
-.header-post:focus {
-    color: var(--primary-background-color);
-}
-
-.header-tel:hover,
-.header-tel:focus {
-    color: var(--primary-background-color);
+    &:hover,
+    &:focus {
+            color: var(--primary-background-color);
+        }
 }
 
 .header-post-icon,

@@ -24,11 +24,12 @@
     width: 170px;
     height: 92px;
     margin-left: 30px;
+    &:first-child {
+            margin-left: 0;
+        }
 }
 
-.clients-item:first-child {
-    margin-left: 0;
-}
+
 
 .clients-link {
     transition-property: color, border;
@@ -46,14 +47,14 @@
     border: 1px solid var(--soc-icons-primary-color);
     border-radius: 4px;
     color: var(--soc-icons-primary-color);
+    &:hover,
+    &:focus {
+        color: var(--primary-background-color);
+        border: 1px solid var(--primary-background-color);
+    }
 }
 
 .clients-icon {
     fill: currentColor;
 }
 
-.clients-link:hover,
-.clients-link:focus {
-    color: var(--primary-background-color);
-    border: 1px solid var(--primary-background-color);
-}
