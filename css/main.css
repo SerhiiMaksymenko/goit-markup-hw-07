@@ -24,6 +24,11 @@
   overflow: hidden;
 }
 
+.team, .clients, .portfolio, .work, .qualities {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* BASE */
 ul {
   list-style: none;
@@ -63,11 +68,10 @@ body {
   color: var(--primary-text-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
+/* .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+} */
 .container {
   width: 1200px;
   margin-left: auto;
